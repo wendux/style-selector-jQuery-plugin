@@ -10,10 +10,7 @@
                 var r = /^[><=!]?=?/;
                 for (var c in s) {
                     var t,v
-                    s[c] = s[c].replace(r, function (w) {
-                        t = w;
-                        return ""
-                    })
+                    s[c] = s[c].replace(r, function (w) {t = w;return ""})
                     if(!t) t="==";
                     if (!m[9]) {
                         var d = $("#_cs");
