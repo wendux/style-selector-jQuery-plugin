@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <script  src="http://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+    <script  src="style.selector.jquery.js"></script>
+</head>
+<script>
+    $(function(){
+        $("#c :css({color:'red'})")
+        $("#c :css({fontSize:'>=16px'})");
+        $("#c :css({backgroundColor:'white'})");
+        $("#c :css({backgroundColor:'white',color:'yellow'})");
+        $("#c :css({color:'red'}) :css({fontSize:'14px'})").text()
+    })
+</script>
+
+<body>
+<div id="c" style="font-size:14px">
+    <div style="color:#f00; background-color:white;">1</div>
+    <div style="color:gray;  font-weight:bold">2</div>
+    <div style="color:green;background-color:white;">3</div>
+    <div style="color:red;background-color:white;">4
+        <div style="font-size: 14px">14px</div>
+        <div style="font-size: 15px">15px</div>
+    </div>
+    <div style="color:blue;font-size:18px;">5</div>
+</div>
+</body>
+</html>
+
